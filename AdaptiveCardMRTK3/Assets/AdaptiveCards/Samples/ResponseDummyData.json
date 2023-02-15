@@ -1,0 +1,49 @@
+{
+	"coord": {
+		"lon": 138.64,
+		"lat": 35.5
+	},
+	"weather": [
+		{
+			"id": 600,
+			"main": "Snow",
+			"description": "light snow",
+			"icon": "13n"
+		}
+	],
+	"base": "stations",
+	"main": {
+		"temp": -4.28,
+		"feels_like": -4.28,
+		"temp_min": -4.28,
+		"temp_max": -1.73,
+		"pressure": 1013,
+		"humidity": 48,
+		"sea_level": 1013,
+		"grnd_level": 894
+	},
+	"visibility": 6113,
+	"wind": {
+		"speed": 1.2,
+		"deg": 309,
+		"gust": 2.19
+	},
+	"snow": {
+		"1h": 0.38
+	},
+	"clouds": {
+		"all": 97
+	},
+	"dt": 1676380175,
+	"sys": {
+		"type": 2,
+		"id": 19739,
+		"country": "JP",
+		"sunrise": 1676324051,
+		"sunset": 1676363119
+	},
+	"timezone": 32400,
+	"id": 7281819,
+	"name": "Fujikawaguchiko",
+	"cod": 200
+}

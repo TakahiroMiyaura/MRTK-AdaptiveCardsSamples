@@ -1,0 +1,234 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.4",
+    "speak": "<s>The forecast for Seattle November 5 is mostly clear with a High of 50 degrees and Low of 41 degrees</s>",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "{{ dt }}",
+            "color": "Accent",
+            "spacing": "default",
+            "wrap": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "{{ name }}, {{ sys.country }}",
+            "size": "ExtraLarge",
+            "isSubtle": true,
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "id":"weatherImage",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "",
+                            "size": "Small",
+                            "altText": "Mostly cloudy weather"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": " {{ main.temp }} °C",
+                            "size": "ExtraLarge",
+                            "spacing": "None",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Feels like {{ main.feels_like }}°C. {{ weather[0].main }}. {{ weather[0].description }}",
+            "weight": "Bolder",
+            "spacing": "default",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://examplesurl/images/sunrise.png",
+                            "altText": "sunrise"
+                        }
+                    ],
+                    "spacing": "None",
+                    "backgroundImage": {
+                        "horizontalAlignment": "Center"
+                    }
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "{{ sys.sunrise }}",
+                            "size": "normal",
+                            "spacing": "Small",
+                            "wrap": true,
+                            "horizontalAlignment": "Left"
+                        }
+                    ],
+                    "spacing": "None"
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://examplesurl/images/sunset.png",
+                            "altText": "sunset",
+                            "spacing": "None"
+                        }
+                    ],
+                    "spacing": "Padding"
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "{{ sys.sunset }}",
+                            "size": "normal",
+                            "spacing": "Padding",
+                            "wrap": true,
+                            "horizontalAlignment": "Left"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "rtl": false,
+                    "spacing": "None"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://examplesurl/images/wind.png",
+                            "altText": "Mostly cloudy weather"
+                        }
+                    ],
+                    "spacing": "None",
+                    "backgroundImage": {
+                        "horizontalAlignment": "Center"
+                    }
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "{{ wind.speed }}m/s {{ wind.deg }}",
+                            "size": "normal",
+                            "spacing": "Small",
+                            "wrap": true,
+                            "horizontalAlignment": "Left"
+                        }
+                    ],
+                    "spacing": "None"
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://examplesurl/images/reading.png",
+                            "altText": "pressure",
+                            "spacing": "None",
+                            "horizontalAlignment": "Left"
+                        }
+                    ],
+                    "spacing": "Padding"
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "{{ main.pressure }}hPa",
+                            "size": "normal",
+                            "spacing": "Padding",
+                            "wrap": true,
+                            "horizontalAlignment": "Left"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "rtl": false,
+                    "spacing": "None"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Humidity: {{ main.humidity }}%",
+                            "horizontalAlignment": "Left",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Visibility: {{ visibility }}km",
+                            "horizontalAlignment": "Left",
+                            "spacing": "None",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Max Temp: {{ main.temp_max }}°C",
+                            "horizontalAlignment": "Left",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Min Temp: {{ main.temp_min }}°C",
+                            "horizontalAlignment": "Left",
+                            "spacing": "None",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

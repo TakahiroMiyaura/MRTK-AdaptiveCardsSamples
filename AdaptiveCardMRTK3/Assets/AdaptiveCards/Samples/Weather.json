@@ -1,0 +1,234 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.4",
+    "speak": "<s>The forecast for Seattle November 5 is mostly clear with a High of 50 degrees and Low of 41 degrees</s>",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Tuesday, February 14, 2023 10:09 PM",
+            "color": "Accent",
+            "spacing": "default",
+            "wrap": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "Fujikawaguchiko, JP",
+            "size": "ExtraLarge",
+            "isSubtle": true,
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "id":"weatherImage",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "",
+                            "size": "Small",
+                            "altText": "Mostly cloudy weather"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": " -4.28 °C",
+                            "size": "ExtraLarge",
+                            "spacing": "None",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Feels like -4.28°C. Snow. light snow",
+            "weight": "Bolder",
+            "spacing": "default",
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://examplesurl/images/sunrise.png",
+                            "altText": "sunrise"
+                        }
+                    ],
+                    "spacing": "None",
+                    "backgroundImage": {
+                        "horizontalAlignment": "Center"
+                    }
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Tuesday, February 14, 2023 6:34 AM",
+                            "size": "normal",
+                            "spacing": "Small",
+                            "wrap": true,
+                            "horizontalAlignment": "Left"
+                        }
+                    ],
+                    "spacing": "None"
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://examplesurl/images/sunset.png",
+                            "altText": "sunset",
+                            "spacing": "None"
+                        }
+                    ],
+                    "spacing": "Padding"
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Tuesday, February 14, 2023 5:25 PM",
+                            "size": "normal",
+                            "spacing": "Padding",
+                            "wrap": true,
+                            "horizontalAlignment": "Left"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "rtl": false,
+                    "spacing": "None"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://examplesurl/images/wind.png",
+                            "altText": "Mostly cloudy weather"
+                        }
+                    ],
+                    "spacing": "None",
+                    "backgroundImage": {
+                        "horizontalAlignment": "Center"
+                    }
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "1.2m/s  NW ",
+                            "size": "normal",
+                            "spacing": "Small",
+                            "wrap": true,
+                            "horizontalAlignment": "Left"
+                        }
+                    ],
+                    "spacing": "None"
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://examplesurl/images/reading.png",
+                            "altText": "pressure",
+                            "spacing": "None",
+                            "horizontalAlignment": "Left"
+                        }
+                    ],
+                    "spacing": "Padding"
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "1013hPa",
+                            "size": "normal",
+                            "spacing": "Padding",
+                            "wrap": true,
+                            "horizontalAlignment": "Left"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "rtl": false,
+                    "spacing": "None"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Humidity: 48%",
+                            "horizontalAlignment": "Left",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Visibility: 6.1km",
+                            "horizontalAlignment": "Left",
+                            "spacing": "None",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Max Temp: -1.73°C",
+                            "horizontalAlignment": "Left",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Min Temp: -4.28°C",
+                            "horizontalAlignment": "Left",
+                            "spacing": "None",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
